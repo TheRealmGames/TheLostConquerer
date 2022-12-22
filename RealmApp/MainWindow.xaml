@@ -1,0 +1,22 @@
+﻿<Window x:Class="RealmApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RealmApp"
+        mc:Ignorable="d"
+        Title="Realm: The Lost Conquerer" Height="800" Width="800" WindowState="Maximized">
+    <Grid Background="LightSkyBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35px" />
+            <RowDefinition Height="35px" />
+            <RowDefinition Height="30px" />
+            <RowDefinition x:Name="playgroundRow" />
+        </Grid.RowDefinitions>
+        <Label x:Name="goldLabel" Content="GOLDS: 1000" Grid.Row="1"/>
+        <Button x:Name="goldBtn" Content="Get Golds" Width="120px" Grid.Row="2"></Button>
+        <StackPanel x:Name="playground" Grid.Row="4">
+            
+        </StackPanel>
+    </Grid>
+</Window>
